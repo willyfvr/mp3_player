@@ -19,9 +19,10 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                audioService.play();
+                // audioService.play();
+                audioService.playLocalMp3();
               },
-              child: const Text('Play'),
+              child: const Text('Play Local MP3'),
             ),
           ],
         ),
