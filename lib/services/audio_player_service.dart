@@ -51,4 +51,8 @@ class AudioPlayerService {
     await _player.setFilePath('/storage/emulated/0/Music/song_app.mp3');
     _player.play();
   }
+
+  Future<void> stopMp3() async {
+    await _player.stop();
+  }
 }
